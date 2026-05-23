@@ -1,15 +1,8 @@
-/*
- * Program: Duplicate Detection
- * Week: 03, Problem: 3
- * Algorithm: Sorting + Linear Scan
- * Time Complexity: O(n log n)
- * Space Complexity: O(log n) (recursion stack)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
 
-// Comparison function for qsort
 int compare(const void *a, const void *b) {
     return (*(int *)a - *(int *)b);
 }
@@ -25,7 +18,7 @@ void solve() {
         }
     }
 
-    // Sort using qsort
+    
     qsort(arr, n, sizeof(int), compare);
 
     int duplicate = 0;

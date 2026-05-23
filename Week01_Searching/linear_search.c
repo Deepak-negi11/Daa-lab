@@ -1,10 +1,4 @@
-/*
- * Program: Linear Search
- * Week: 01, Problem: 1
- * Algorithm: Linear Search
- * Time Complexity: O(n)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>

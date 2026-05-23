@@ -12,7 +12,7 @@ int main() {
     printf("Unordered pairs: %d\n", count);
     printf("Ordered pairs: %d\n", count * 2);
     
-    // Also try with all possible interpretations
+    
     printf("\n--- With key=2 ---\n");
     count = 0; k = 2;
     for (int i = 0; i < n; i++)

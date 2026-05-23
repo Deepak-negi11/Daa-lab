@@ -1,10 +1,4 @@
-/*
- * Program: Duplicate Count
- * Week: 02, Problem: 1
- * Algorithm: Binary Search for First and Last Occurrence
- * Time Complexity: O(log n)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,7 +10,7 @@ int find_first(int *arr, int n, int key) {
         int mid = low + (high - low) / 2;
         if (arr[mid] == key) {
             res = mid;
-            high = mid - 1; // look on the left
+            high = mid - 1; 
         } else if (arr[mid] < key) {
             low = mid + 1;
         } else {
@@ -33,7 +27,7 @@ int find_last(int *arr, int n, int key) {
         int mid = low + (high - low) / 2;
         if (arr[mid] == key) {
             res = mid;
-            low = mid + 1; // look on the right
+            low = mid + 1; 
         } else if (arr[mid] < key) {
             low = mid + 1;
         } else {
@@ -59,8 +53,8 @@ void solve() {
         return;
     }
 
-    // Sort array just in case input is not fully sorted (e.g. sample has 55 before 25)
-    // Using a simple bubble/insertion sort or qsort
+    
+    
     for (int i = 1; i < n; i++) {
         int temp = arr[i];
         int j = i - 1;

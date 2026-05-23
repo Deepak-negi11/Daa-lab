@@ -1,10 +1,4 @@
-/*
- * Program: Randomized Quick Sort
- * Week: 04, Problem: 2
- * Algorithm: Randomized Quick Sort
- * Time Complexity: O(n log n) average, O(n^2) worst case
- * Space Complexity: O(log n) average (recursion stack)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,7 +15,7 @@ void swap(int *a, int *b) {
 }
 
 int partition(int *arr, int low, int high) {
-    // Select random pivot and swap with high
+    
     int random_pivot = low + rand() % (high - low + 1);
     swap(&arr[random_pivot], &arr[high]);
 

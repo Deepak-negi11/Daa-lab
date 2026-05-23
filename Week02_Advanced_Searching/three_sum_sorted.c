@@ -1,10 +1,4 @@
-/*
- * Program: Three Sum (arr[i] + arr[j] = arr[k])
- * Week: 02, Problem: 2
- * Algorithm: Two Pointer Approach
- * Time Complexity: O(n^2)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +14,7 @@ void solve() {
         }
     }
 
-    // Two pointer search
+    
     int found = 0;
     for (int k = 2; k < n; k++) {
         int left = 0;

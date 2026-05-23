@@ -1,10 +1,4 @@
-/*
- * Program: Kth Smallest Element
- * Week: 04, Problem: 3
- * Algorithm: QuickSelect (Average O(n) Time Complexity)
- * Time Complexity: O(n) average, O(n^2) worst case
- * Space Complexity: O(log n) recursion stack
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,10 +1,4 @@
-/*
- * Program: Merge Sort
- * Week: 03 (Wait, PDF says Week 4, Problem 1)
- * Algorithm: Merge Sort
- * Time Complexity: O(n log n)
- * Space Complexity: O(n)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>

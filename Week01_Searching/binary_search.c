@@ -1,10 +1,4 @@
-/*
- * Program: Binary Search
- * Week: 01, Problem: 2
- * Algorithm: Binary Search
- * Time Complexity: O(log n)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>

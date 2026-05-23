@@ -1,10 +1,4 @@
-/*
- * Program: Count Pairs with Given Difference
- * Week: 02, Problem: 3
- * Algorithm: Nested Loop / Hash Map / Two Pointer
- * Time Complexity: O(n^2) (simplest for duplicates) or O(n log n)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,7 +20,7 @@ void solve() {
     }
 
     int count = 0;
-    // Count pairs with absolute difference K
+    
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (abs(arr[i] - arr[j]) == k) {

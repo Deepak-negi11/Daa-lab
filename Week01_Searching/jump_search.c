@@ -1,10 +1,4 @@
-/*
- * Program: Jump Search (Exponential Search variant)
- * Week: 01, Problem: 3
- * Algorithm: Jump/Exponential Search
- * Time Complexity: O(log n)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,7 +22,7 @@ void solve() {
     int comparisons = 0;
     int found = 0;
 
-    // Check first element
+    
     comparisons++;
     if (arr[0] == key) {
         printf("Present %d\n", comparisons);
@@ -39,7 +33,7 @@ void solve() {
     int low = 0;
     int high = 0;
     int k = 0;
-    int idx = 1; // 2^0
+    int idx = 1; 
 
     while (idx < n) {
         comparisons++;
@@ -61,7 +55,7 @@ void solve() {
         if (idx >= n) {
             high = n - 1;
         }
-        // Linear search from low to high
+        
         for (int i = low; i <= high; i++) {
             comparisons++;
             if (arr[i] == key) {

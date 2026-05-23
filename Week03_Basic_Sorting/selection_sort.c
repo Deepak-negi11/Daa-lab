@@ -1,10 +1,4 @@
-/*
- * Program: Selection Sort
- * Week: 03, Problem: 2
- * Algorithm: Selection Sort
- * Time Complexity: O(n^2)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,7 +25,7 @@ void solve() {
                 min_idx = j;
             }
         }
-        // Swap arr[i] and arr[min_idx] unconditionally (to match sample output swaps = n - 1)
+        
         int temp = arr[i];
         arr[i] = arr[min_idx];
         arr[min_idx] = temp;

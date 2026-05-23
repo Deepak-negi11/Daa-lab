@@ -1,10 +1,4 @@
-/*
- * Program: Insertion Sort
- * Week: 03, Problem: 1
- * Algorithm: Insertion Sort
- * Time Complexity: O(n^2)
- * Space Complexity: O(1)
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,16 +20,16 @@ void solve() {
     for (int i = 1; i < n; i++) {
         int temp = arr[i];
         int j = i - 1;
-        // The problem counts comparisons inside the loop (only when the condition arr[j] > temp is evaluated to true)
+        
         while (j >= 0 && arr[j] > temp) {
             comparisons++;
             arr[j + 1] = arr[j];
             shifts++;
             j--;
         }
-        // If the loop terminates or does not run, the check arr[j] > temp that evaluates to false is not counted
+        
         arr[j + 1] = temp;
-        shifts++; // Counting the insertion shift
+        shifts++; 
     }
 
     for (int i = 0; i < n; i++) {
